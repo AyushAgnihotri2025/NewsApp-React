@@ -20,7 +20,7 @@ const App = () => {
           shadow={true}
         />
         <Routes>
-          <Route path="/">
+          <Route exact path="/">
             <News
               setProgress={setProgress}
               key="general"
@@ -29,7 +29,7 @@ const App = () => {
               apikey={apikey}
             ></News>
           </Route>
-          <Route path="general">
+          <Route exact path="/general">
             <News
               setProgress={setProgress}
               key="general"
@@ -38,7 +38,7 @@ const App = () => {
               apikey={apikey}
             ></News>
           </Route>
-          <Route path="business">
+          <Route path="/business">
             <News
               setProgress={setProgress}
               key="business"
@@ -47,7 +47,7 @@ const App = () => {
               apikey={apikey}
             ></News>
           </Route>
-          <Route path="entertainment">
+          <Route exact path="/entertainment">
             <News
               setProgress={setProgress}
               key="entertainment"
@@ -56,7 +56,7 @@ const App = () => {
               apikey={apikey}
             ></News>
           </Route>
-          <Route path="health">
+          <Route exact path="/health">
             <News
               setProgress={setProgress}
               key="health"
@@ -65,7 +65,7 @@ const App = () => {
               apikey={apikey}
             ></News>
           </Route>
-          <Route path="science">
+          <Route exact path="/science">
             <News
               setProgress={setProgress}
               key="science"
@@ -74,7 +74,7 @@ const App = () => {
               apikey={apikey}
             ></News>
           </Route>
-          <Route path="sports">
+          <Route exact path="/sports">
             <News
               setProgress={setProgress}
               key="sports"
@@ -83,7 +83,7 @@ const App = () => {
               apikey={apikey}
             ></News>
           </Route>
-          <Route path="technology">
+          <Route exact path="/technology">
             <News
               setProgress={setProgress}
               key="technology"
