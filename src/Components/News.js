@@ -28,6 +28,7 @@ const News = (props) => {
     setloading(false);
     settotalResults(parsedData.totalResults);
   };
+
   useEffect(() => {
     document.title = `${capitalizeFirstLetter(props.category)}-NewsInshort`;
     updatedData();
@@ -91,6 +92,7 @@ const News = (props) => {
     </>
   );
 };
+
 News.defaultProps = {
   country: "in",
   pageSize: 8,

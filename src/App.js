@@ -2,7 +2,7 @@ import "./App.css";
 import React, { useState } from "react";
 import NavBar from "./Components/Navbar";
 import News from "./Components/News";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Switch, Route } from "react-router-dom";
 import LoadingBar from "react-top-loading-bar";
 const App = () => {
   const pageSize = 8;
@@ -19,7 +19,7 @@ const App = () => {
           height={3}
           shadow={true}
         />
-        <Routes>
+        <Switch>
           <Route exact path="/">
             <News
               setProgress={setProgress}
@@ -89,7 +89,7 @@ const App = () => {
               apikey={apikey}
             ></News>
           </Route>
-        </Routes>
+        </Switch>
       </BrowserRouter>
     </div>
   );
