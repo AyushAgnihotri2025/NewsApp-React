@@ -29,15 +29,12 @@ const App = () => {
               apikey={apikey}
             ></News>
           </Route>
-          <Route exact path="/general">
-            <News
+          <Route exact path="/general" element={<News
               setProgress={setProgress}
               key="general"
               pageSize={pageSize}
               category="general"
-              apikey={apikey}
-            ></News>
-          </Route>
+              apikey={apikey} />}/>
           <Route exact path="/business">
             <News
               setProgress={setProgress}
