@@ -15,10 +15,8 @@ const News = (props) => {
   };
 
   const updatedData = async () => {
-    console.log("Hello...");
     props.setProgress(10);
-    console.log("Hello...");
-    let url = `https://newsapi.org/v2/top-headlines?country=us&category=${props.category}&apiKey=${props.apikey}&page=1&pageSize=${props.pageSize}`;
+    let url = `https://api.mrayush.me/news?country=us&category=${props.category}&apiKey=${props.apikey}&page=1&pageSize=${props.pageSize}`;
     setloading(true);
     let data = await fetch(url);
     let parsedData = await data.json();
@@ -36,7 +34,7 @@ const News = (props) => {
   }, []);
 
   const fetchMoreData = async () => {
-    let url = `https://newsapi.org/v2/top-headlines?country=us&category=${props.category}&apiKey=${props.apikey}&page=${page+1}&pageSize=${props.pageSize}`;
+    let url = `https://api.mrayush.me/news?country=us&category=${props.category}&apiKey=${props.apikey}&page=${page+1}&pageSize=${props.pageSize}`;
     setpage(page + 1);
     // this.setState({ loading: true });
     let data = await fetch(url);
