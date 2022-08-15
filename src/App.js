@@ -20,7 +20,7 @@ const App = () => {
           shadow={true}
         />
         <Routes>
-          <Route path="/">
+          <Route exact path="/">
             <News
               setProgress={setProgress}
               key="general"
@@ -29,13 +29,13 @@ const App = () => {
               apikey={apikey}
             ></News>
           </Route>
-          <Route path="general" element={<News
+          <Route path="/general" element={<News
               setProgress={setProgress}
               key="general"
               pageSize={pageSize}
               category="general"
               apikey={apikey} />}/>
-          <Route path="business">
+          <Route path="/business">
             <News
               setProgress={setProgress}
               key="business"
@@ -44,7 +44,7 @@ const App = () => {
               apikey={apikey}
             ></News>
           </Route>
-          <Route path="entertainment">
+          <Route path="/entertainment">
             <News
               setProgress={setProgress}
               key="entertainment"
@@ -53,7 +53,7 @@ const App = () => {
               apikey={apikey}
             ></News>
           </Route>
-          <Route path="health">
+          <Route path="/health">
             <News
               setProgress={setProgress}
               key="health"
@@ -62,7 +62,7 @@ const App = () => {
               apikey={apikey}
             ></News>
           </Route>
-          <Route path="science">
+          <Route path="/science">
             <News
               setProgress={setProgress}
               key="science"
@@ -71,7 +71,7 @@ const App = () => {
               apikey={apikey}
             ></News>
           </Route>
-          <Route path="sports">
+          <Route path="/sports">
             <News
               setProgress={setProgress}
               key="sports"
@@ -80,7 +80,7 @@ const App = () => {
               apikey={apikey}
             ></News>
           </Route>
-          <Route path="technology">
+          <Route path="/technology">
             <News
               setProgress={setProgress}
               key="technology"
