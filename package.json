@@ -13,7 +13,7 @@
     "react-infinite-scroll-component": "^6.1.0",
     "react-router-dom": "^6.3.0",
     "react-scripts": "5.0.1",
-    "react-top-loading-bar": "^2.1.0",
+    "react-top-loading-bar": "AyushAgnihotri2025/react-top-loading-bar#master",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
